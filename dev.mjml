@@ -9,7 +9,7 @@
     <mj-preview>We hope you enjoyed your ride this morning.</mj-preview>
 
     <!-- This tag allows you to import fonts if used in your MJML document -->
-    <mj-font name="questrial" href="https://fonts.googleapis.com/css?family=Questrial" />
+    <mj-font name='Questrial' href="https://fonts.googleapis.com/css?family=Questrial&display=swap" />
 
     <!-- This tag allows you to modify default attributes on a mj-tag and add mj-class to them. -->
     <mj-attributes>
@@ -17,6 +17,10 @@
     </mj-attributes>
 
     <mj-style>
+      .question-mark div{
+          <!-- margin: 0px 0px 0px 0px !important; -->
+      }
+
       @media (max-width:432px){
 
         .large-header div{
@@ -27,6 +31,16 @@
         .small-header div{
           font-size: 20px !important;
           line-height: 26px !important;
+        }
+
+        .total div{
+          font-size: 30px !important;
+          line-height: 44px !important;
+        }
+
+        .total-cost div{
+          font-size: 30px !important;
+          line-height: 44px !important;
         }
 
       }
@@ -41,6 +55,16 @@
         .small-header div{
           font-size: 22px !important;
           line-height: 26px !important;
+        }
+
+        .total div{
+          font-size: 40px !important;
+          line-height: 44px !important;
+        }
+
+        .total-cost div{
+          font-size: 40px !important;
+          line-height: 44px !important;
         }
 
       }
@@ -92,22 +116,31 @@
 
 
 
-    <!-- Uber logo, Cost, Date start -->
-    <mj-section background-color="#C6DAFF" padding="30px 30px 30px 30px">
+    <mj-raw>
+      <!-- Uber logo, Cost, Date start -->
+    </mj-raw>
+
+    <mj-section background-color="#C6DAFF" padding="45px 30px 30px 30px">
 
       <mj-group>
 
-        <!-- uber logo -->
+        <mj-raw>
+          <!-- uber logo -->
+        </mj-raw>
+
         <mj-column width="50%">
           <mj-image src="https://i.postimg.cc/k54PMnjY/receipt-uber-logo.png" alt="black uber logo" width="69px" align="left"/>
         </mj-column>
 
-        <!-- cost and date -->
+        <mj-raw>
+          <!-- cost and date -->
+        </mj-raw>
+
         <mj-column width="50%">
-            <mj-text align="right" font-family="questrial" padding="0px 0px 3px 0px">
+            <mj-text align="right" font-family="'Questrial', sans-serif" padding="0px 0px 3px 0px">
               Total: <span style="font-weight:bold">A$65.00</span>
             </mj-text>
-            <mj-text align="right" font-family="questrial">
+            <mj-text align="right" font-family="'Questrial', sans-serif">
               Fri, Jan 24, 2020
             </mj-text>
         </mj-column>
@@ -115,11 +148,16 @@
       </mj-group>
 
     </mj-section>
-    <!-- Uber logo, Cost, Date end -->
+
+    <mj-raw>
+      <!-- Uber logo, Cost, Date end -->
+    </mj-raw>
 
 
+    <mj-raw>
+      <!-- Thanks for riding, .... start -->
+    </mj-raw>
 
-    <!-- Thanks for riding, .... start -->
     <mj-hero
       mode="fixed-height"
       background-url="https://i.postimg.cc/prKgcyTr/receipt-18-headerbg.png"
@@ -130,18 +168,316 @@
       padding="0px 30px 0px 30px"
     >
 
-    <mj-text font-family="questrial" font-size="34px" font-weight="bold" line-height="38px" padding="20px 0px 10px 0px" css-class="large-header">
+    <mj-text font-family="'Questrial', sans-serif" font-size="34px" font-weight="600" line-height="38px" padding="20px 0px 10px 0px" css-class="large-header">
       Thanks for riding, Peter Parker
     </mj-text>
 
-    <mj-text font-family="questrial" font-size="20px" line-height="26px" padding="0px 0px 25px 0px" css-class="small-header">
+    <mj-text font-family="'Questrial', sans-serif" font-size="20px" line-height="26px" padding="0px 0px 25px 0px" css-class="small-header">
       We hope you enjoyed your ride this morning.
     </mj-text>
 
     <mj-image src="https://i.postimg.cc/V6xxFXz2/receipt-18-rider-default.png" alt="blue car logo" width="144px" align="right" padding="0px 30px 0px 0px" css-class="blue-car"/>
 
     </mj-hero>
-    <!-- Thanks for riding, .... end -->
+
+    <mj-raw>
+      <!-- Thanks for riding, .... end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Total cost start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="50px 30px 0px 30px">
+      <mj-group>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="30px" font-weight="bold" align="left" css-class="total">
+            Total
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="30px" font-weight="bold" align="right" css-class="total-cost">
+            A$65.00
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+
+    </mj-section>
+
+    <mj-raw>
+      <!-- Total cost end -->
+    </mj-raw>
+
+    <mj-raw>
+      <!-- blue line start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="26px 30px 26px 30px">
+      <mj-column>
+        <mj-spacer  height="1px" container-background-color="#009EB7"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- blue line end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Trip fare start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="20px 30px 0px 30px">
+      <mj-group>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="left" css-class="trip">
+            Trip Fare
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right" css-class="trip-cost">
+            A$63.31
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+
+    </mj-section>
+
+    <mj-raw>
+      <!-- Trip fare end -->
+    </mj-raw>
+
+    <mj-raw>
+      <!-- gray line start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="26px 30px 26px 30px">
+      <mj-column>
+        <mj-spacer  height="1px" container-background-color="#bdbdbd"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- gray line end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Subtotal start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="20px 30px 0px 30px">
+      <mj-group>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" font-weight="bold" align="left" >
+            Subtotal
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" font-weight="bold" align="right" >
+            A$63.31
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+
+    </mj-section>
+
+    <mj-raw>
+      <!-- Subtotal end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Tolls, Surcharges ..... start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="20px 30px 0px 30px">
+      <mj-group>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="left">
+            Tolls, Surcharges And Fees
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right">
+            A$1.65
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+
+    </mj-section>
+
+    <mj-raw>
+      <!-- Tolls, Surcharges ..... end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Trip fare start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="20px 30px 0px 30px">
+      <mj-group>
+
+        <mj-column width="50%" >
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="left">
+            Wait Time
+            <span style="padding: 0px 3px 0px 3px">
+              <a href="https://help.uber.com/riders/article/wait-time-fees?nodeId=5960f72c-802a-4b61-a51c-2c9498c3b041" target="_blank" rel="noreferrer">
+                <img src="https://i.postimg.cc/nz9873fv/rr-rider-blue-Icon-15x15-2x.png" alt="blue question mark" style="width:15px; height:15px;"/>
+              </a>
+            </span>
+          </mj-text>
+        </mj-column>
+
+
+        <mj-column width="50%">
+          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right">
+            A$0.04
+          </mj-text>
+        </mj-column>
+
+      </mj-group>
+
+    </mj-section>
+
+    <mj-raw>
+      <!-- Trip fare end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- gray line start -->
+    </mj-raw>
+
+    <mj-section background-color="#ffffff" padding="35px 30px 26px 30px">
+      <mj-column>
+        <mj-spacer  height="1px" container-background-color="#bdbdbd"/>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- gray line end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Amount Charged start -->
+    </mj-raw>
+
+        <mj-section background-color="#ffffff" padding="10px 30px 0px 30px">
+          <mj-column>
+            <mj-text font-family="'Questrial', sans-serif" font-size="17px" font-weight="bold" align="left">
+              Amount Charged
+            </mj-text>
+          </mj-column>
+        </mj-section>
+
+    <mj-raw>
+      <!-- Amount Charged end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Visa card start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="10px 30px 20px 30px">
+      <mj-column>
+        <mj-table  font-family="'Questrial', sans-serif">
+          <tr>
+            <td width="40px">
+              <img src="https://i.postimg.cc/RCf5ZpRm/Ub-ic-Visa-33x23-2x.png" alt="visa card" width="35px"></img>
+            </td>
+            <td style="padding:0 0 5px 15px; font-size: 16px;" >
+                •••• 6500
+            </td>
+            <td style="padding: 0 0 5px 15px; font-size: 19px; font-weight:bold;" align="right">
+              A$65.00
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- Visa card end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Vist the trip page ....  start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="0px 30px 20px 30px">
+        <mj-column>
+          <mj-text font-family="'Questrial', sans-serif" line-height="18px">
+            <span>
+              <a href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" style="color:blue;"> Visit the trip page</a>
+            </span>
+             for more information, including invoices (where available)
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+    <mj-raw>
+      <!-- Vist the trip page ....  end -->
+    </mj-raw>
+
+
+
+    <mj-raw>
+      <!-- Download PDF start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="0px 30px 8px 30px">
+        <mj-column>
+          <mj-text font-family="'Questrial', sans-serif" font-size="18px" font-weight="bold">
+            <span>
+              <a href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" style="color:blue; text-decoration: none;"> Download PDF </a>
+            </span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+    <mj-raw>
+      <!-- Download PDF end -->
+    </mj-raw>
+
+
+
+    <mj-raw>
+      <!-- Download link expires ..... start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="0px 30px 50px 30px">
+        <mj-column>
+          <mj-text font-family="'Questrial', sans-serif" font-size="13px">
+            Download link expires 1/24/2020
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+    <mj-raw>
+      <!-- Download link expires ..... end -->
+    </mj-raw>
+
 
 
 
