@@ -14,17 +14,136 @@
     <!-- This tag allows you to modify default attributes on a mj-tag and add mj-class to them. -->
     <mj-attributes>
       <mj-all padding="0" />
-      <mj-class name="crimson" color="crimson"/>
     </mj-attributes>
+
+    <mj-style>
+      @media (max-width:432px){
+
+        .large-header div{
+          font-size: 34px !important;
+          line-height: 38px !important;
+        }
+
+        .small-header div{
+          font-size: 20px !important;
+          line-height: 26px !important;
+        }
+
+      }
+
+      @media (min-width:433px){
+
+        .large-header div{
+          font-size: 44px !important;
+          line-height: 48px !important;
+        }
+
+        .small-header div{
+          font-size: 22px !important;
+          line-height: 26px !important;
+        }
+
+      }
+
+      @media (min-width:491px){
+
+        .large-header div{
+          max-width: 392px !important;
+          margin: 0px 0px 0px 0px !important;
+        }
+
+      }
+
+      @media (min-width:471px){
+
+        .small-header div{
+          max-width: 392px !important;
+        }
+
+      }
+
+      @media (min-width:519px){
+
+        .small-header{
+          padding: 0px 0px 0px 0px !important;
+        }
+
+        .small-header div{
+          margin: 0px 0px -52px 0px !important;
+        }
+
+        .blue-car{
+            padding: 0px 0px 0px 0px !important;
+        }
+
+      }
+
+      @media (min-width:630px){
+
+        .blue-car{
+            padding: 0px 50px 0px 0px !important;
+        }
+
+      }
+    </mj-style>
   </mj-head>
 
-  <mj-body background-color="#ffffff">
+  <mj-body background-color="#d6d6d5" width="700px">
 
-    <mj-section>
-      <mj-column>
-        <mj-text align="center" font-family="questrial" font-size="33px" padding="20px" mj-class="crimson">Don't trust the cake!!!</mj-text>
-      </mj-column>
+
+
+    <!-- Uber logo, Cost, Date start -->
+    <mj-section background-color="#C6DAFF" padding="30px 30px 30px 30px">
+
+      <mj-group>
+
+        <!-- uber logo -->
+        <mj-column width="50%">
+          <mj-image src="https://i.postimg.cc/k54PMnjY/receipt-uber-logo.png" alt="black uber logo" width="69px" align="left"/>
+        </mj-column>
+
+        <!-- cost and date -->
+        <mj-column width="50%">
+            <mj-text align="right" font-family="questrial" padding="0px 0px 3px 0px">
+              Total: <span style="font-weight:bold">A$65.00</span>
+            </mj-text>
+            <mj-text align="right" font-family="questrial">
+              Fri, Jan 24, 2020
+            </mj-text>
+        </mj-column>
+
+      </mj-group>
+
     </mj-section>
+    <!-- Uber logo, Cost, Date end -->
+
+
+
+    <!-- Thanks for riding, .... start -->
+    <mj-hero
+      mode="fixed-height"
+      background-url="https://i.postimg.cc/prKgcyTr/receipt-18-headerbg.png"
+      background-color="#C6DAFF"
+      background-width="300px"
+      background-height="300px"
+      background-position="right bottom"
+      padding="0px 30px 0px 30px"
+    >
+
+    <mj-text font-family="questrial" font-size="34px" font-weight="bold" line-height="38px" padding="20px 0px 10px 0px" css-class="large-header">
+      Thanks for riding, Peter Parker
+    </mj-text>
+
+    <mj-text font-family="questrial" font-size="20px" line-height="26px" padding="0px 0px 25px 0px" css-class="small-header">
+      We hope you enjoyed your ride this morning.
+    </mj-text>
+
+    <mj-image src="https://i.postimg.cc/V6xxFXz2/receipt-18-rider-default.png" alt="blue car logo" width="144px" align="right" padding="0px 30px 0px 0px" css-class="blue-car"/>
+
+    </mj-hero>
+    <!-- Thanks for riding, .... end -->
+
+
 
   </mj-body>
 
