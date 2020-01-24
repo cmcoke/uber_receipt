@@ -1,0 +1,31 @@
+<!-- if owa is set to "desktop", it will force desktop version of email to display on outlook. Otherwise outlook will display mobile version since it ignores media queries -->
+<mjml owa="desktop">
+
+  <mj-head>
+    <!-- This tag allows you to set the title of an MJML document -->
+    <mj-title>Uber Email Receipt</mj-title>
+
+    <!-- This tag allows you to set the preview that will be displayed in the inbox of the recipient. -->
+    <mj-preview>We hope you enjoyed your ride this morning.</mj-preview>
+
+    <!-- This tag allows you to import fonts if used in your MJML document -->
+    <mj-font name="questrial" href="https://fonts.googleapis.com/css?family=Questrial" />
+
+    <!-- This tag allows you to modify default attributes on a mj-tag and add mj-class to them. -->
+    <mj-attributes>
+      <mj-all padding="0" />
+      <mj-class name="crimson" color="crimson"/>
+    </mj-attributes>
+  </mj-head>
+
+  <mj-body background-color="#ffffff">
+
+    <mj-section>
+      <mj-column>
+        <mj-text align="center" font-family="questrial" font-size="33px" padding="20px" mj-class="crimson">Don't trust the cake!!!</mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+
+</mjml>

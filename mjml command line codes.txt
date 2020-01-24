@@ -1,0 +1,9 @@
+****** Watches dev.mjml for changes and then transpile the file to index.html in the production folder ******
+mjml -w dev.mjml -o ./production/index.html
+
+
+****** Watches dev.mjml for changes and then minifies and transpile the file to index.html in the production folder ******
+mjml -w dev.mjml --config.minify -o ./production/index.html
+
+
+<p>Please note that this email is a personal project of mine and not that of Boosted Board.</p>
