@@ -17,9 +17,6 @@
     </mj-attributes>
 
     <mj-style>
-      .question-mark div{
-          <!-- margin: 0px 0px 0px 0px !important; -->
-      }
 
       @media (max-width:432px){
 
@@ -106,6 +103,14 @@
 
         .blue-car{
             padding: 0px 50px 0px 0px !important;
+        }
+
+      }
+
+      @media (min-width:670px){
+
+        .left div{
+          text-align:left !important;
         }
 
       }
@@ -479,6 +484,103 @@
     </mj-raw>
 
 
+    <mj-raw>
+      <!-- You rode with ..... start -->
+    </mj-raw>
+
+    <mj-section background-color="#F8F8FA" padding="45px 30px 0px 30px">
+      <mj-column>
+        <mj-text font-family="'Questrial', sans-serif" font-size="20px" align="center" css-class="left">
+          You rode with Tony Starks
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-raw>
+      <!-- You rode with ..... end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Rating ..... start -->
+    </mj-raw>
+
+      <mj-section background-color="#F8F8FA" padding="30px 30px 40px 30px">
+
+        <mj-column width="180px">
+          <mj-image src="https://i.postimg.cc/4xWjSDJ6/v1.png" alt="blue diamond" width="62px" padding="0px 0px 20px 0px"/>
+        </mj-column>
+
+        <mj-column width="200px">
+
+            <mj-text font-family="'Questrial', sans-serif" font-size="14px" align="center" padding="0px 0px 15px 0px" >
+              4.68 <span> <img src="https://i.postimg.cc/ncYyvsgw/STAR.png" alt="black star" width="13"/> </span> Rating
+            </mj-text>
+
+            <mj-spacer  height="1px" width="117px" container-background-color="#276EF1" />
+
+            <mj-text font-family="'Questrial', sans-serif" font-size="15px" font-weight="bold" line-height="18px" align="center" padding="20px 0px 0px 0px">
+              Top Driver Compliment
+            </mj-text>
+
+            <mj-text font-family="'Questrial', sans-serif" font-size="15px" line-height="18px" align="center" padding="10px 0px 10px 0px">
+              "Excellent Sevice"
+            </mj-text>
+
+        </mj-column>
+
+        <mj-column width="250px">
+
+          <mj-text font-family="'Questrial', sans-serif" font-size="18px" align="center" padding="20px 0px 10px 0px" >
+            How was your ride?
+          </mj-text>
+
+          <mj-button href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" background-color="#276EF1" color="#ffffff" font-family="'Questrial', sans-serif" font-size="13px">
+            RATE NOW
+          </mj-button>
+
+        </mj-column>
+
+      </mj-section>
+
+
+    <mj-raw>
+      <!-- Rating ..... end -->
+    </mj-raw>
+
+
+    <mj-raw>
+      <!-- Booking Service ..... start -->
+    </mj-raw>
+
+
+      <mj-section background-color="#F8F8FA" padding="0px 30px 30px 30px">
+
+        <mj-column>
+
+          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
+            Booking Service Provider: RGE Pty Ltd
+          </mj-text>
+
+          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
+            Vehicle Registration: RGE250
+          </mj-text>
+
+          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
+            Driver Accreditation Number: 610030
+          </mj-text>
+        </mj-column>
+
+
+
+      </mj-section>
+
+
+
+
+    <mj-raw>
+      <!-- Booking Service ..... end -->
+    </mj-raw>
 
 
   </mj-body>
