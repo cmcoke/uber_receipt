@@ -4,7 +4,7 @@
   "scripts": {
     "deploy": "gh-pages -d production"
   },
-  "homepage": "https://cmcoke.github.io/uber",
+  "homepage": "https://cmcoke.github.io/uber_receipt",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gh-pages": "^2.2.0",
