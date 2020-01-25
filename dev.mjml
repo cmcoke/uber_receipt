@@ -113,6 +113,10 @@
           text-align:left !important;
         }
 
+        .left-image div{
+          text-align:right !important;
+        }
+
       }
     </mj-style>
   </mj-head>
@@ -146,7 +150,7 @@
               Total: <span style="font-weight:bold">A$65.00</span>
             </mj-text>
             <mj-text align="right" font-family="'Questrial', sans-serif">
-              Fri, Jan 24, 2020
+              Fri, Jan 24, 2018
             </mj-text>
         </mj-column>
 
@@ -473,7 +477,7 @@
       <mj-section background-color="#ffffff" padding="0px 30px 50px 30px">
         <mj-column>
           <mj-text font-family="'Questrial', sans-serif" font-size="13px">
-            Download link expires 1/24/2020
+            Download link expires 1/24/2018
           </mj-text>
         </mj-column>
       </mj-section>
@@ -491,7 +495,7 @@
     <mj-section background-color="#F8F8FA" padding="45px 30px 0px 30px">
       <mj-column>
         <mj-text font-family="'Questrial', sans-serif" font-size="20px" align="center" css-class="left">
-          You rode with Tony Starks
+          You rode with Tony Stark
         </mj-text>
       </mj-column>
     </mj-section>
@@ -559,15 +563,15 @@
         <mj-column>
 
           <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Booking Service Provider: RGE Pty Ltd
+            Booking Service Provider: MAR Pty Ltd
           </mj-text>
 
           <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Vehicle Registration: RGE250
+            Vehicle Registration: MAR250
           </mj-text>
 
           <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Driver Accreditation Number: 610030
+            Driver Accreditation Number: 210080
           </mj-text>
         </mj-column>
 
@@ -576,11 +580,136 @@
       </mj-section>
 
 
-
-
     <mj-raw>
       <!-- Booking Service ..... end -->
     </mj-raw>
+
+
+
+    <mj-raw>
+      <!-- Km and Min ..... start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="30px 30px 30px 30px">
+
+        <mj-column>
+          <mj-table>
+            <tr>
+              <td width="40px" style="font-size:12px; font-family:'Questrial', sans-serif; background-color:#000000; color:#ffffff; padding:1px 12px 1px 12px; border-radius:20px; text-align:center; ">
+                UberX
+              </td>
+              <td style="padding:0px 0px 0px 15px; font-size: 16px; color: #595959;" >
+                4.22 | 16 min
+              </td>
+            </tr>
+          </mj-table>
+        </mj-column>
+
+      </mj-section>
+
+
+    <mj-raw>
+      <!-- Km and Min ..... end -->
+    </mj-raw>
+
+
+
+    <mj-raw>
+      <!-- Time ..... start -->
+    </mj-raw>
+
+      <mj-section background-color="#ffffff" padding="0px 30px 30px 30px">
+
+        <mj-column>
+          <mj-table>
+            <tr>
+
+              <td width="4px" style="width:4px; font-size:1px; line-height:1px" valign="top">
+                <image src="https://i.postimg.cc/0y9q3G7s/receipt-18-square-top-fill-left.png" width="4px" height="17px"/>
+              </td>
+
+              <td width="1px" style="width:1px; font-size:1px; line-height:1px; background-color:#000000;" valign="top">
+                <image src="https://i.postimg.cc/Dw5KKWcb/receipt-18-square-top-fill-middle.png" width="1px" height="17px"/>
+              </td>
+
+              <td width="3px" style="width:3px; font-size:1px; line-height:1px" valign="top" align="left">
+                <image src="https://i.postimg.cc/DyrTBpJ6/receipt-18-square-top-fill-right.png" width="3px" height="17px"/>
+              </td>
+
+              <td style="padding:0px 0px 30px 20px; font-family:'Questrial', sans-serif; font-size:17px;" valign="top">
+                <span style="font-weight:bold;">10:18am</span> <br>
+                595 Swanston St, Carlton VIC <br>
+                3053, Australia
+              </td>
+
+            </tr>
+
+            <tr>
+
+              <td width="4px" style="width:4px; font-size:1px; line-height:1px" valign="top">
+                <image src="https://i.postimg.cc/3RFzsTQj/receipt-18-square-top-fill-left.png" width="4px" height="17px"/>
+              </td>
+
+              <td width="1px" style="width:1px; font-size:1px; line-height:1px; background-color:#ffffff;" valign="top">
+                <image src="https://i.postimg.cc/NMcWC0Sf/receipt-18-square-btm-fill-middle.png" width="1px" height="20px"/>
+              </td>
+
+              <td width="3px" style="width:3px; font-size:1px; line-height:1px;" valign="top">
+                <image src="https://i.postimg.cc/BbZRsVJr/receipt-18-square-top-fill-right.png" width="3px" height="17px"/>
+              </td>
+
+              <td style="padding:0px 0px 40px 20px; font-family:'Questrial', sans-serif; font-size:17px;" align="left">
+                <span style="font-weight:bold;">10:35am</span> <br>
+                41-43A Stewart St, <br>
+                Richmond VIC 3121, Australia
+              </td>
+
+            </tr>
+          </mj-table>
+        </mj-column>
+
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/LshGKxXr/uber-map-thursday.png" alt="map" width="312px"/>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-raw>
+        <!-- Time ..... end -->
+      </mj-raw>
+
+
+      <mj-raw>
+        <!-- Invite your ..... start -->
+      </mj-raw>
+
+      <mj-wrapper background-color="#ffffff" padding="20px 30px 30px 30px">
+
+        <mj-section background-color="#F1F1F1" padding="20px 10px 20px 10px">
+
+          <mj-column vertical-align="middle" width="25%">
+            <mj-image src="https://i.postimg.cc/RV5m1xFq/Gx-Gy-Icon-176x176.png" width="88px" alt="blue mail icon" align="center"/>
+          </mj-column>
+
+          <mj-column vertical-align="middle" width="75%">
+
+            <mj-text font-family="'Questrial', sans-serif" font-size="18px" padding="20px 0px 10px 0px" align="center" css-class="left">
+              Invite your friends and family.
+            </mj-text>
+
+            <mj-text font-family="'Questrial', sans-serif" font-size="16px" line-height="22px" padding="0px 0px 10px 0px" align="center" css-class="left">
+              Get a free ride worth up to $5 when you refer a <br> friend to try Uber. Share code: MARVEL
+            </mj-text>
+
+          </mj-column>
+
+        </mj-section>
+
+      </mj-wrapper>
+
+      <mj-raw>
+        <!-- Invite your ..... end -->
+      </mj-raw>
 
 
   </mj-body>
