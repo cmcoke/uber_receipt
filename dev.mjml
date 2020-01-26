@@ -18,7 +18,7 @@
 
     <mj-style>
 
-      @media (max-width:432px){
+        @media (max-width:432px){
 
         .large-header div{
           font-size: 34px !important;
@@ -118,6 +118,27 @@
         }
 
       }
+
+      @media (max-width: 716px){
+
+        .hide {
+          display: none !important;
+        }
+
+      }
+
+      @media (min-width: 717px){
+
+        .three-columns{
+          width: 30% !important;
+          max-width: 30%  !important;
+        }
+
+        .padding-links {
+          padding: 0px 0px 0px 32px !important;
+        }
+
+      }
     </mj-style>
   </mj-head>
 
@@ -129,34 +150,39 @@
       <!-- Uber logo, Cost, Date start -->
     </mj-raw>
 
-    <mj-section background-color="#C6DAFF" padding="45px 30px 30px 30px">
+    <mj-wrapper background-color="#C6DAFF">
 
-      <mj-group>
+      <mj-section padding="45px 30px 30px 30px" background-color="#C6DAFF">
 
-        <mj-raw>
-          <!-- uber logo -->
-        </mj-raw>
+        <mj-group background-color="#C6DAFF">
 
-        <mj-column width="50%">
-          <mj-image src="https://i.postimg.cc/k54PMnjY/receipt-uber-logo.png" alt="black uber logo" width="69px" align="left"/>
-        </mj-column>
+          <mj-raw>
+            <!-- uber logo -->
+          </mj-raw>
 
-        <mj-raw>
-          <!-- cost and date -->
-        </mj-raw>
 
-        <mj-column width="50%">
-            <mj-text align="right" font-family="'Questrial', sans-serif" padding="0px 0px 3px 0px">
-              Total: <span style="font-weight:bold">A$65.00</span>
-            </mj-text>
-            <mj-text align="right" font-family="'Questrial', sans-serif">
-              Fri, Jan 24, 2018
-            </mj-text>
-        </mj-column>
+          <mj-column width="50%">
+            <mj-image src="https://i.postimg.cc/k54PMnjY/receipt-uber-logo.png" alt="black uber logo" width="69px" align="left"/>
+          </mj-column>
 
-      </mj-group>
+          <mj-raw>
+            <!-- cost and date -->
+          </mj-raw>
 
-    </mj-section>
+          <mj-column width="50%">
+              <mj-text align="right" font-family="'Questrial', sans-serif" padding="0px 0px 3px 0px">
+                Total: <span style="font-weight:bold">$5.75</span>
+              </mj-text>
+              <mj-text align="right" font-family="'Questrial', sans-serif">
+                Fri, Jan 24, 2018
+              </mj-text>
+          </mj-column>
+
+        </mj-group>
+
+      </mj-section>
+
+    </mj-wrapper>
 
     <mj-raw>
       <!-- Uber logo, Cost, Date end -->
@@ -167,27 +193,27 @@
       <!-- Thanks for riding, .... start -->
     </mj-raw>
 
-    <mj-hero
-      mode="fixed-height"
-      background-url="https://i.postimg.cc/prKgcyTr/receipt-18-headerbg.png"
-      background-color="#C6DAFF"
-      background-width="300px"
-      background-height="300px"
-      background-position="right bottom"
-      padding="0px 30px 0px 30px"
-    >
+      <mj-hero
+        mode="fluid-height"
+        background-url="https://i.postimg.cc/prKgcyTr/receipt-18-headerbg.png"
+        background-color="#C6DAFF"
+        background-width="300px"
+        background-height="100px"
+        background-position="right bottom"
+        padding="0px 30px 0px 30px"
+      >
 
-    <mj-text font-family="'Questrial', sans-serif" font-size="34px" font-weight="600" line-height="38px" padding="20px 0px 10px 0px" css-class="large-header">
-      Thanks for riding, Peter Parker
-    </mj-text>
+      <mj-text font-family="'Questrial', sans-serif" font-size="34px" font-weight="600" line-height="38px" padding="20px 0px 10px 0px"  css-class="large-header" container-background-color="#C6DAFF"	>
+        Thanks for riding, Peter Parker
+      </mj-text>
 
-    <mj-text font-family="'Questrial', sans-serif" font-size="20px" line-height="26px" padding="0px 0px 25px 0px" css-class="small-header">
-      We hope you enjoyed your ride this morning.
-    </mj-text>
+      <mj-text font-family="'Questrial', sans-serif" font-size="20px" line-height="26px" padding="0px 0px 25px 0px"  css-class="small-header" container-background-color="#C6DAFF"	>
+        We hope you enjoyed your ride this evening.
+      </mj-text>
 
-    <mj-image src="https://i.postimg.cc/V6xxFXz2/receipt-18-rider-default.png" alt="blue car logo" width="144px" align="right" padding="0px 30px 0px 0px" css-class="blue-car"/>
+      <mj-image src="https://i.postimg.cc/V6xxFXz2/receipt-18-rider-default.png" alt="blue car logo" width="144px" align="right" padding="0px 30px 0px 0px" css-class="blue-car" />
 
-    </mj-hero>
+      </mj-hero>
 
     <mj-raw>
       <!-- Thanks for riding, .... end -->
@@ -209,7 +235,7 @@
 
         <mj-column width="50%">
           <mj-text font-family="'Questrial', sans-serif" font-size="30px" font-weight="bold" align="right" css-class="total-cost">
-            A$65.00
+            $5.75
           </mj-text>
         </mj-column>
 
@@ -225,10 +251,8 @@
       <!-- blue line start -->
     </mj-raw>
 
-    <mj-section background-color="#ffffff" padding="26px 30px 26px 30px">
-      <mj-column>
-        <mj-spacer  height="1px" container-background-color="#009EB7"/>
-      </mj-column>
+    <mj-section background-color="#ffffff"  padding="26px 30px 26px 30px">
+      <mj-column border-bottom="1px solid #009EB7" ></mj-column>
     </mj-section>
 
     <mj-raw>
@@ -251,7 +275,7 @@
 
         <mj-column width="50%">
           <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right" css-class="trip-cost">
-            A$63.31
+            $3.25
           </mj-text>
         </mj-column>
 
@@ -267,10 +291,8 @@
       <!-- gray line start -->
     </mj-raw>
 
-    <mj-section background-color="#ffffff" padding="26px 30px 26px 30px">
-      <mj-column>
-        <mj-spacer  height="1px" container-background-color="#bdbdbd"/>
-      </mj-column>
+    <mj-section background-color="#ffffff"  padding="26px 30px 26px 30px">
+      <mj-column border-bottom="1px solid #bdbdbd" ></mj-column>
     </mj-section>
 
     <mj-raw>
@@ -293,7 +315,7 @@
 
         <mj-column width="50%">
           <mj-text font-family="'Questrial', sans-serif" font-size="17px" font-weight="bold" align="right" >
-            A$63.31
+            $3.25
           </mj-text>
         </mj-column>
 
@@ -316,12 +338,17 @@
         <mj-column width="50%">
           <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="left">
             Tolls, Surcharges And Fees
+            <span style="padding: 0px 5px 0px 5px">
+              <a href="https://help.uber.com/riders/article/wait-time-fees?nodeId=5960f72c-802a-4b61-a51c-2c9498c3b041" target="_blank" rel="noreferrer">
+                <img src="https://i.postimg.cc/nz9873fv/rr-rider-blue-Icon-15x15-2x.png" alt="blue question mark" style="width:15px; height:15px;"/>
+              </a>
+            </span>
           </mj-text>
         </mj-column>
 
         <mj-column width="50%">
           <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right">
-            A$1.65
+            $2.50
           </mj-text>
         </mj-column>
 
@@ -334,48 +361,14 @@
     </mj-raw>
 
 
-    <mj-raw>
-      <!-- Trip fare start -->
-    </mj-raw>
-
-    <mj-section background-color="#ffffff" padding="20px 30px 0px 30px">
-      <mj-group>
-
-        <mj-column width="50%" >
-          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="left">
-            Wait Time
-            <span style="padding: 0px 3px 0px 3px">
-              <a href="https://help.uber.com/riders/article/wait-time-fees?nodeId=5960f72c-802a-4b61-a51c-2c9498c3b041" target="_blank" rel="noreferrer">
-                <img src="https://i.postimg.cc/nz9873fv/rr-rider-blue-Icon-15x15-2x.png" alt="blue question mark" style="width:15px; height:15px;"/>
-              </a>
-            </span>
-          </mj-text>
-        </mj-column>
-
-
-        <mj-column width="50%">
-          <mj-text font-family="'Questrial', sans-serif" font-size="17px" align="right">
-            A$0.04
-          </mj-text>
-        </mj-column>
-
-      </mj-group>
-
-    </mj-section>
-
-    <mj-raw>
-      <!-- Trip fare end -->
-    </mj-raw>
 
 
     <mj-raw>
       <!-- gray line start -->
     </mj-raw>
 
-    <mj-section background-color="#ffffff" padding="35px 30px 26px 30px">
-      <mj-column>
-        <mj-spacer  height="1px" container-background-color="#bdbdbd"/>
-      </mj-column>
+    <mj-section background-color="#ffffff"  padding="35px 30px 26px 30px">
+      <mj-column border-bottom="1px solid #bdbdbd" ></mj-column>
     </mj-section>
 
     <mj-raw>
@@ -413,9 +406,15 @@
             </td>
             <td style="padding:0 0 5px 15px; font-size: 16px;" >
                 •••• 6500
+                <span style="padding: 0px 5px 0px 5px">
+                  |
+                </span>
+                <span>
+                  <a href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" style="color:blue; text-decoration:none; "> Switch </a>
+                </span>
             </td>
             <td style="padding: 0 0 5px 15px; font-size: 19px; font-weight:bold;" align="right">
-              A$65.00
+              $5.75
             </td>
           </tr>
         </mj-table>
@@ -519,11 +518,10 @@
 
             <mj-text font-family="'Questrial', sans-serif" font-size="14px" align="center" padding="0px 0px 15px 0px" >
               4.68 <span> <img src="https://i.postimg.cc/ncYyvsgw/STAR.png" alt="black star" width="13"/> </span> Rating
+              <span style="border-bottom:1px solid #276EF1; display:block; width:100%;" width="100%">&nbsp;</span>
             </mj-text>
 
-            <mj-spacer  height="1px" width="117px" container-background-color="#276EF1" />
-
-            <mj-text font-family="'Questrial', sans-serif" font-size="15px" font-weight="bold" line-height="18px" align="center" padding="20px 0px 0px 0px">
+            <mj-text font-family="'Questrial', sans-serif" font-size="15px" font-weight="bold" line-height="18px" align="center" padding="0px 0px 0px 0px">
               Top Driver Compliment
             </mj-text>
 
@@ -541,6 +539,7 @@
 
           <mj-button href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" background-color="#276EF1" color="#ffffff" font-family="'Questrial', sans-serif" font-size="13px">
             RATE NOW
+            <span style="padding-left:10px;">❯</span>
           </mj-button>
 
         </mj-column>
@@ -552,45 +551,58 @@
       <!-- Rating ..... end -->
     </mj-raw>
 
+    <mj-raw>
+      <!-- Transportation Network ..... start -->
+    </mj-raw>
+
+    <mj-section background-color="#F8F8FA" padding="0px 30px 20px 30px">
+      <mj-column>
+        <mj-text font-family="'Questrial', sans-serif" font-size="14px" line-height="22px" padding="7px 0px 7px 0px">
+          Transportation Network Company: Rasier, LLC.
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
     <mj-raw>
-      <!-- Booking Service ..... start -->
+      <!-- Transportation Network ..... end -->
+    </mj-raw>
+
+    <mj-raw>
+      <!-- AllState ..... start -->
+    </mj-raw>
+
+      <mj-wrapper background-color="#F8F8FA" padding="0px 30px 30px 30px">
+
+        <mj-section padding="0px 0px 30px 0px">
+
+          <mj-column vertical-align="middle" width="20%">
+            <mj-image src="https://i.postimg.cc/vB5wJp7w/insurance-allstate.png" alt="Allstate logo" width="88px" align="left"/>
+          </mj-column>
+
+          <mj-column vertical-align="middle" width="78%">
+            <mj-text font-family="'Questrial', sans-serif" font-size="16px" line-height="20px" padding="7px 0px 7px 0px" align="left">
+              Every rideshare trip starting in Illinois is insured by Allstate.
+              <span><a href="https://www.uber.com/do/en/ride/safety/" target="_blank" rel="noreferrer" style="font-size:16px; font-family:'Questrial', sans-serif; color:#276EF1; text-decoration:none;"> <br> Learn more.</a></span>
+            </mj-text>
+          </mj-column>
+
+        </mj-section>
+
+      </mj-wrapper>
+
+
+
+    <mj-raw>
+      <!-- AllState ..... end -->
     </mj-raw>
 
 
-      <mj-section background-color="#F8F8FA" padding="0px 30px 30px 30px">
-
-        <mj-column>
-
-          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Booking Service Provider: MAR Pty Ltd
-          </mj-text>
-
-          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Vehicle Registration: MAR250
-          </mj-text>
-
-          <mj-text font-family="'Questrial', sans-serif" font-size="15px" padding="0px 0px 15px 0px" align="center" css-class="left">
-            Driver Accreditation Number: 210080
-          </mj-text>
-        </mj-column>
-
-
-
-      </mj-section>
-
 
     <mj-raw>
-      <!-- Booking Service ..... end -->
+      <!-- mi and min ..... start -->
     </mj-raw>
 
-
-
-    <mj-raw>
-      <!-- Km and Min ..... start -->
-    </mj-raw>
-
-      <mj-section background-color="#ffffff" padding="30px 30px 30px 30px">
+      <mj-section background-color="#ffffff" padding="50px 30px 30px 30px">
 
         <mj-column>
           <mj-table>
@@ -599,7 +611,7 @@
                 UberX
               </td>
               <td style="padding:0px 0px 0px 15px; font-size: 16px; color: #595959;" >
-                4.22 | 16 min
+                0.89 mi | 3 min
               </td>
             </tr>
           </mj-table>
@@ -609,7 +621,7 @@
 
 
     <mj-raw>
-      <!-- Km and Min ..... end -->
+      <!-- mi and min ..... end -->
     </mj-raw>
 
 
@@ -636,10 +648,9 @@
                 <image src="https://i.postimg.cc/DyrTBpJ6/receipt-18-square-top-fill-right.png" width="3px" height="17px"/>
               </td>
 
-              <td style="padding:0px 0px 30px 20px; font-family:'Questrial', sans-serif; font-size:17px;" valign="top">
-                <span style="font-weight:bold;">10:18am</span> <br>
-                595 Swanston St, Carlton VIC <br>
-                3053, Australia
+              <td style="padding:0px 0px 30px 20px; font-family:'Questrial', sans-serif; font-size:16px;" valign="top">
+                <span style="font-weight:bold;">07:20pm</span> <br>
+                650 North Street, Chicago, IL
               </td>
 
             </tr>
@@ -658,10 +669,9 @@
                 <image src="https://i.postimg.cc/BbZRsVJr/receipt-18-square-top-fill-right.png" width="3px" height="17px"/>
               </td>
 
-              <td style="padding:0px 0px 40px 20px; font-family:'Questrial', sans-serif; font-size:17px;" align="left">
-                <span style="font-weight:bold;">10:35am</span> <br>
-                41-43A Stewart St, <br>
-                Richmond VIC 3121, Australia
+              <td style="padding:0px 0px 40px 20px; font-family:'Questrial', sans-serif; font-size:16px;" align="left">
+                <span style="font-weight:bold;">7:24pm</span> <br>
+                650 W Willis St, Chicago, IL
               </td>
 
             </tr>
@@ -669,7 +679,7 @@
         </mj-column>
 
         <mj-column>
-          <mj-image src="https://i.postimg.cc/LshGKxXr/uber-map-thursday.png" alt="map" width="312px"/>
+          <mj-image src="https://i.postimg.cc/ZnZz4VjB/map.png" alt="map" width="312px"/>
         </mj-column>
 
       </mj-section>
@@ -683,7 +693,7 @@
         <!-- Invite your ..... start -->
       </mj-raw>
 
-      <mj-wrapper background-color="#ffffff" padding="20px 30px 30px 30px">
+      <mj-wrapper background-color="#ffffff" padding="20px 30px 40px 30px">
 
         <mj-section background-color="#F1F1F1" padding="20px 10px 20px 10px">
 
@@ -710,6 +720,143 @@
       <mj-raw>
         <!-- Invite your ..... end -->
       </mj-raw>
+
+
+      <mj-raw>
+        <!-- Report Lost Item ..... start -->
+      </mj-raw>
+
+      <mj-wrapper background-color="#276EF1">
+
+        <mj-section padding="15px 0px 5px 0px" css-class="padding-links">
+
+          <mj-column padding="0px 0px 10px 0px" width="100%"   css-class="three-columns">
+            <mj-button href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" background-color="#276EF1" color="#ffffff" font-family="'Questrial', sans-serif" font-size="13px" align="left">
+              REPORT LOST ITEM
+              <span style="padding:0px 0px 0px 10px;">❯</span>
+              <span>
+                <td height="10" width="1" style="direction:ltr; text-align: left; border-right: 1px solid #ffffff; padding-left:0px;" class="hide">&nbsp;</td>
+              </span>
+            </mj-button>
+          </mj-column>
+
+          <mj-column padding="0px 0px 10px 0px" width="100%"   css-class="three-columns">
+            <mj-button href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" background-color="#276EF1" color="#ffffff" font-family="'Questrial', sans-serif" font-size="13px" align="left">
+              CONTACT SUPPORT
+              <span style="padding:0px 0px 0px 10px;">❯</span>
+              <span>
+                <td height="10" width="1" style="direction:ltr; text-align: left; border-right: 1px solid #ffffff; padding-left:0px;" class="hide">&nbsp;</td>
+              </span>
+            </mj-button>
+          </mj-column>
+
+          <mj-column padding="0px 0px 0px 0px" width="100%"   css-class="three-columns">
+            <mj-button href="https://www.uber.com/global/en/sign-in/" target="_blank" rel="noreferrer" background-color="#276EF1" color="#ffffff" font-family="'Questrial', sans-serif" font-size="13px" align="left">
+              MY TRIPS
+              <span style="padding:0px 0px 0px 10px;">❯</span>
+            </mj-button>
+          </mj-column>
+
+        </mj-section>
+
+      </mj-wrapper>
+
+
+      <mj-raw>
+        <!-- Report Lost Item ..... end -->
+      </mj-raw>
+
+
+      <mj-raw>
+        <!-- Uber white logo on black background start -->
+      </mj-raw>
+
+        <mj-section background-color="#000000" padding="50px 30px 50px 30px">
+          <mj-column>
+            <mj-image src="https://i.postimg.cc/CLgyBCPq/Uber-Logo-White-RGB-138x48.png" alt="white uber logo" width="69px" height="24px" align="left"/>
+          </mj-column>
+        </mj-section>
+
+      <mj-raw>
+        <!-- Uber white logo on black background end -->
+      </mj-raw>
+
+      <mj-raw>
+        <!-- black line start -->
+      </mj-raw>
+
+      <mj-section background-color="#000000"  padding="0px 30px 26px 30px">
+        <mj-column border-bottom="1px solid #333333" ></mj-column>
+      </mj-section>
+
+      <mj-raw>
+        <!-- black line end -->
+      </mj-raw>
+
+
+      <mj-raw>
+        <!-- FAQ, Forgot password .... start -->
+      </mj-raw>
+
+      <mj-section background-color="#000000" padding="0px 30px 45px 30px">
+
+        <mj-column padding="0px 0px 20px 0px">
+
+          <mj-text padding="0px 0px 20px 0px">
+            <span>
+              <a href="https://help.uber.com/riders" target="_blank" rel="noreferrer" style="font-size:15px; font-family:'Questrial', sans-serif; color:#ffffff; text-decoration:none; ">FAQ</a>
+            </span>
+          </mj-text>
+
+          <mj-text>
+            <span>
+              <a href="https://help.uber.com/riders" target="_blank" rel="noreferrer" style="font-size:15px; font-family:'Questrial', sans-serif; color:#ffffff; text-decoration:none;">Forgot password</a>
+            </span>
+          </mj-text>
+
+        </mj-column>
+
+        <mj-column>
+
+            <mj-text font-size="12px" line-height="18px" font-family="'Questrial', sans-serif" color="#9d9da3" padding="0px 0px 20px 0px">
+              Uber Technologies <br>
+              1455 Market St <br>
+              San Francisco, CA 94103
+            </mj-text>
+
+            <mj-text padding="0px 0px 10px 0px">
+              <span>
+                <a href="https://help.uber.com/riders" target="_blank" rel="noreferrer" style="font-size:13px; font-family:'Questrial', sans-serif; color:#ffffff; text-decoration:none;">Privacy</a>
+              </span>
+            </mj-text>
+
+            <mj-text>
+              <span>
+                <a href="https://help.uber.com/riders" target="_blank" rel="noreferrer" style="font-size:13px; font-family:'Questrial', sans-serif; color:#ffffff; text-decoration:none;">Terms</a>
+              </span>
+            </mj-text>
+
+        </mj-column>
+
+
+      </mj-section>
+
+      <mj-raw>
+        <!-- FAQ, Forgot password .... end -->
+      </mj-raw>
+
+
+    <mj-raw>
+      <!-- personal note -->
+    </mj-raw>
+
+    <mj-section background-color="#F5F5F5" padding="20px 15px 20px 15px">
+      <mj-column>
+        <mj-text font-family="'Questrial', sans-serif" font-size="12px" line-height="15px" align="center" color="black">
+           <p>Please note that this email is a personal project of mine and not that of Uber. All images used belongs to Uber.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
 
   </mj-body>
